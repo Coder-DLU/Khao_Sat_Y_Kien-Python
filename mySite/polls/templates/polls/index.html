@@ -1,0 +1,15 @@
+{% extends 'polls/base.html'%}
+
+    {% block content1 %}
+     <h1>Đây là templade</h1>
+    <p> Chào các bạn mình là {{ name}}</p>
+    <h2>Tài sản tôi gồm:</h2>
+    <ul>
+        {% for item in taisan %}
+            {% if item != 'máy tính' %}
+                <li>{{item}}</li>
+            {% endif%}
+
+        {% endfor%}
+    </ul>
+    {%endblock%}
